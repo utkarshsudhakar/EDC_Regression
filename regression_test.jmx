@@ -1648,6 +1648,8 @@ log.info(vars.getObject(&quot;finalfoldername&quot;));</stringProp>
 ///data5/JmeterLogs/results/${RELEASE}/${MERCURY_BUILD}/${ResourceName}/${__time(yyyy-MM-dd HH)}/CPU.csv
 //def foldername =vars.get(&quot;foldername&quot;);
 String foldername=&quot;${ResultsFolder}&quot;;//${__char(36)}{foobar}
+
+
 log.info(foldername);
 //string s2=&quot;#{ResourceName}&quot;;
 ////log.info(s2);
@@ -1666,6 +1668,20 @@ log.info(fullfoldername);
 vars.putObject(&quot;finalfoldername&quot;,fullfoldername);
 log.info(vars.getObject(&quot;finalfoldername&quot;));
 //log.info(&quot;the a5 value is&quot;+ vars.get(&quot;a5&quot;));</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="JSR223 Sampler" enabled="true">
+          <stringProp name="scriptLanguage">groovy</stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="script">var hostname=vars.get(&quot;Hostname&quot;)
+var resourcename=vars.get(&quot;ResourceName&quot;)
+var loopcount=vars.get(&quot;loopcount&quot;)
+
+log.info(hostname)
+log.info(resourcename)
+log.info(loopcount)</stringProp>
         </JSR223Sampler>
         <hashTree/>
         <org.apache.jmeter.protocol.ssh.sampler.SSHSampler guiclass="TestBeanGUI" testclass="org.apache.jmeter.protocol.ssh.sampler.SSHSampler" testname="DIS PID" enabled="false">
