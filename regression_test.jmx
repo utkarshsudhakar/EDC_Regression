@@ -100,7 +100,7 @@
       <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="ResourceName" enabled="true">
         <stringProp name="delimiter">,</stringProp>
         <stringProp name="fileEncoding"></stringProp>
-        <stringProp name="filename">${_P(resourceNameCSV,&quot;&quot;)}</stringProp>
+        <stringProp name="filename">${__P(resourceNameCSV,&quot;&quot;)}</stringProp>
         <boolProp name="quotedData">true</boolProp>
         <boolProp name="recycle">false</boolProp>
         <stringProp name="shareMode">shareMode.all</stringProp>
@@ -1578,10 +1578,10 @@ vars.put(&quot;DOMAIN_SERVER_HOSTNAME&quot;, vars.get(&quot;Hostname&quot;));
             <stringProp name="-220246055">ResourceName</stringProp>
           </collectionProp>
           <collectionProp name="UserParameters.thread_values">
-            <collectionProp name="-826097784">
+            <collectionProp name="-645804869">
               <stringProp name="-1662072941">${Hostname}</stringProp>
-              <stringProp name="1656383">6005</stringProp>
-              <stringProp name="1746004">9085</stringProp>
+              <stringProp name="1567010">3005</stringProp>
+              <stringProp name="1567258">3085</stringProp>
               <stringProp name="-1854571443">${ResourceName}</stringProp>
             </collectionProp>
           </collectionProp>
@@ -1597,12 +1597,12 @@ vars.put(&quot;DOMAIN_SERVER_HOSTNAME&quot;, vars.get(&quot;Hostname&quot;));
           <stringProp name="dbUrl">jdbc:oracle:thin:@//irl75cmgperf06.informatica.com:1521/CMGPERF06.informatica.com</stringProp>
           <stringProp name="driver">oracle.jdbc.OracleDriver</stringProp>
           <boolProp name="keepAlive">true</boolProp>
-          <stringProp name="password">MRS_1040_335_irl75cmgperf07</stringProp>
+          <stringProp name="password">MRS_EDC1041BRC2</stringProp>
           <stringProp name="poolMax">10</stringProp>
           <stringProp name="timeout">50000</stringProp>
           <stringProp name="transactionIsolation">DEFAULT</stringProp>
           <stringProp name="trimInterval">60000</stringProp>
-          <stringProp name="username">MRS_1040_335_irl75cmgperf07</stringProp>
+          <stringProp name="username">MRS_EDC1041BRC2</stringProp>
           <stringProp name="TestPlan.comments">LDM_PWH_RC2 jdbc:informatica:oracle://inldmqarh65n3.informatica.com:1521;ServiceName=EDC12CDB.informatica.com ;
 jdbc:oracle:thin:@//irl75cmgperf02.informatica.com:1521/CMGPERF02.informatica.com</stringProp>
           <stringProp name="initQuery"></stringProp>
@@ -30605,6 +30605,43 @@ without actual network activity. This helps debugging tests.</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">C:\Users\usudhaka\Desktop\REGRESSION_TEST.jtl</stringProp>
+      </ResultCollector>
+      <hashTree/>
     </hashTree>
   </hashTree>
 </jmeterTestPlan>
