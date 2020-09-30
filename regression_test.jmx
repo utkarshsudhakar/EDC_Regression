@@ -129,7 +129,7 @@
           <org.apache.jmeter.protocol.ssh.sampler.SSHSampler guiclass="TestBeanGUI" testclass="org.apache.jmeter.protocol.ssh.sampler.SSHSampler" testname="DIS PID" enabled="true">
             <stringProp name="command">ps -ef | grep DataIntegrationService/ |grep -v grep |grep -v fd.sh |grep -v netstat.sh| grep -v grep | awk &apos;{print $2}&apos;</stringProp>
             <stringProp name="hostname">${Hostname}</stringProp>
-            <stringProp name="password">root123</stringProp>
+            <stringProp name="password">infa@123</stringProp>
             <intProp name="port">22</intProp>
             <stringProp name="username">root</stringProp>
           </org.apache.jmeter.protocol.ssh.sampler.SSHSampler>
@@ -855,7 +855,7 @@ log.info(IngestionPid);
           <org.apache.jmeter.protocol.ssh.sampler.SSHSampler guiclass="TestBeanGUI" testclass="org.apache.jmeter.protocol.ssh.sampler.SSHSampler" testname="HDFS" enabled="false">
             <stringProp name="command">hdfs dfs -du -s -h /Informatica/LDM/${perfSCN}/hbase</stringProp>
             <stringProp name="hostname">${Hostname}</stringProp>
-            <stringProp name="password">root123</stringProp>
+            <stringProp name="password">infa@123</stringProp>
             <intProp name="port">22</intProp>
             <stringProp name="username">root</stringProp>
           </org.apache.jmeter.protocol.ssh.sampler.SSHSampler>
@@ -960,7 +960,7 @@ log.info(IngestionPid);
           <org.apache.jmeter.protocol.ssh.sampler.SSHSampler guiclass="TestBeanGUI" testclass="org.apache.jmeter.protocol.ssh.sampler.SSHSampler" testname="MRS PID" enabled="true">
             <stringProp name="command">ps -ef | grep ModelRepositoryService| grep -v grep |awk &apos;{print $2}&apos;</stringProp>
             <stringProp name="hostname">${Hostname}</stringProp>
-            <stringProp name="password">root123</stringProp>
+            <stringProp name="password">infa@123</stringProp>
             <intProp name="port">22</intProp>
             <stringProp name="username">root</stringProp>
           </org.apache.jmeter.protocol.ssh.sampler.SSHSampler>
@@ -1065,7 +1065,7 @@ log.info(IngestionPid);
           <org.apache.jmeter.protocol.ssh.sampler.SSHSampler guiclass="TestBeanGUI" testclass="org.apache.jmeter.protocol.ssh.sampler.SSHSampler" testname="Catalog  PID" enabled="true">
             <stringProp name="command">ps -ef | grep CatalogService/ |grep -v grep |grep -v ingest |grep -v netstat.sh| grep -v grep | grep -v grep |awk &apos;{print $2}&apos;</stringProp>
             <stringProp name="hostname">${Hostname}</stringProp>
-            <stringProp name="password">root123</stringProp>
+            <stringProp name="password">infa@123</stringProp>
             <intProp name="port">22</intProp>
             <stringProp name="username">root</stringProp>
           </org.apache.jmeter.protocol.ssh.sampler.SSHSampler>
@@ -1170,7 +1170,7 @@ log.info(IngestionPid);
           <org.apache.jmeter.protocol.ssh.sampler.SSHSampler guiclass="TestBeanGUI" testclass="org.apache.jmeter.protocol.ssh.sampler.SSHSampler" testname="Node  PID" enabled="true">
             <stringProp name="command"> ps -ef | grep isplogging |grep -v grep |grep -v ingest |grep -v netstat.sh| grep -v grep | grep -v grep |awk &apos;{print $2}&apos;</stringProp>
             <stringProp name="hostname">${Hostname}</stringProp>
-            <stringProp name="password">root123</stringProp>
+            <stringProp name="password">infa@123</stringProp>
             <intProp name="port">22</intProp>
             <stringProp name="username">root</stringProp>
           </org.apache.jmeter.protocol.ssh.sampler.SSHSampler>
