@@ -104,9 +104,9 @@
         <boolProp name="quotedData">true</boolProp>
         <boolProp name="recycle">false</boolProp>
         <stringProp name="shareMode">shareMode.all</stringProp>
-        <boolProp name="stopThread">false</boolProp>
+        <boolProp name="stopThread">true</boolProp>
         <stringProp name="variableNames">ResourceName</stringProp>
-        <boolProp name="ignoreFirstLine">true</boolProp>
+        <boolProp name="ignoreFirstLine">false</boolProp>
       </CSVDataSet>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="All DIS -spark-hbase-solr-Memory monitoring- process level -memory graph" enabled="true">
@@ -30605,7 +30605,7 @@ without actual network activity. This helps debugging tests.</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
@@ -30639,7 +30639,7 @@ without actual network activity. This helps debugging tests.</stringProp>
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">C:\Users\usudhaka\Desktop\REGRESSION_TEST.jtl</stringProp>
+        <stringProp name="filename">C:\Users\usudhaka\Desktop\EDC_Regression_regression_test_33.jtl</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
